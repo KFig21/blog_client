@@ -117,6 +117,10 @@
 
     .comment-count {
       margin-left: 2.5px;
+
+      @include mobile {
+        margin-top: 4px;
+      }
     }
 
     .comment-icon-container {

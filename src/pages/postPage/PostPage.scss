@@ -85,7 +85,7 @@
   }
 
   @include mobile {
-    color: rgb(108, 108, 108);
+    font-weight: unset;
   }
 }
 
@@ -157,7 +157,7 @@
     max-width: 800px;
 
     @include mobile {
-      max-width: 270px;
+      max-width: 300px;
     }
   }
 }

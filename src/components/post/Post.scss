@@ -63,6 +63,7 @@
     height: 34px;
     font-size: 18px;
     font-weight: unset;
+    color: rgb(141, 141, 141);
   }
 }
 
@@ -119,7 +120,7 @@
       margin-left: 2.5px;
 
       @include mobile {
-        margin-top: 4px;
+        margin-top: 3px;
       }
     }
 

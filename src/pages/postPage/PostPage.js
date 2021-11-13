@@ -84,7 +84,7 @@ export default function EditPost() {
 
               {/* Author */}
               <span className="post-page-submitted">
-                Submitted: {post.submitted} by{" "}
+                {post.submitted} by{" "}
                 <span className="post-page-author">{post.author}</span>
               </span>
 

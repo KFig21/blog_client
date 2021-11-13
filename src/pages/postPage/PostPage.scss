@@ -86,6 +86,7 @@
 
   @include mobile {
     font-weight: unset;
+    color: rgb(141, 141, 141);
   }
 }
 
@@ -287,6 +288,7 @@
 
     @include mobile {
       font-weight: unset;
+      color: rgb(141, 141, 141);
     }
   }
 }

@@ -28,25 +28,32 @@
 }
 
 .nav-link-container {
-  button {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    font-size: 20px;
-    height: 80px;
+  a {
     width: 100px;
-    transition: all 0.2s ease;
-    cursor: pointer;
-    color: white;
-
-    &:hover {
-      background-color: rgb(59, 59, 59);
-      color: white;
-    }
 
     @include mobile {
       margin-right: 5px;
-      padding: 8px 10px;
+    }
+
+    button {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      font-size: 20px;
+      height: 80px;
+      width: 100px;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      color: white;
+
+      &:hover {
+        background-color: rgb(59, 59, 59);
+        color: white;
+      }
+
+      @include mobile {
+        padding: 8px 10px;
+      }
     }
   }
 

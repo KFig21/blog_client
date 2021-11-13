@@ -83,6 +83,10 @@
     font-weight: 400;
     font-style: normal;
   }
+
+  @include mobile {
+    color: rgb(108, 108, 108);
+  }
 }
 
 .post-page-body {
@@ -231,7 +235,7 @@
     border: none;
     outline: none;
     font-size: 16px;
-    padding: 7px 15px;
+    padding: 8px 15px;
     border-radius: 3px;
     transition: all 0.2s ease;
     cursor: pointer;
@@ -272,5 +276,9 @@
     font-weight: 100;
     color: gray;
     font-style: italic;
+
+    @include mobile {
+      color: rgb(108, 108, 108);
+    }
   }
 }

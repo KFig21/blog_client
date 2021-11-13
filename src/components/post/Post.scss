@@ -16,6 +16,8 @@
     width: 90%;
     min-width: 90%;
     max-width: 90%;
+    min-height: 320px;
+    max-height: 320px;
   }
 }
 
@@ -45,6 +47,11 @@
   height: 30px;
   padding-top: 8px;
   font-weight: 700;
+
+  @include mobile {
+    height: 34px;
+    font-size: 18px;
+  }
 }
 .post-container-submitted {
   height: 24px;
@@ -52,6 +59,12 @@
   font-weight: 100;
   color: gray;
   font-style: italic;
+  @include mobile {
+    height: 34px;
+    font-size: 18px;
+    font-weight: unset;
+    color: rgb(105, 105, 105);
+  }
 }
 
 .view-post-container {
@@ -62,6 +75,12 @@
   align-items: center;
   justify-content: center;
   position: relative;
+
+  @include mobile {
+    height: 40px;
+    min-height: 40px;
+    max-height: 40px;
+  }
 
   button {
     background-color: $primaryColor;
@@ -76,6 +95,11 @@
     &:hover {
       background-color: $primaryColorFaded;
       color: white;
+    }
+
+    @include mobile {
+      font-size: 18px;
+      padding: 10px 18px;
     }
   }
 

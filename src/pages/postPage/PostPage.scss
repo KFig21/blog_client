@@ -152,6 +152,14 @@
       background-color: $primaryColorFaded;
     }
   }
+
+  img {
+    max-width: 800px;
+
+    @include mobile {
+      max-width: 270px;
+    }
+  }
 }
 
 // comments
@@ -278,7 +286,7 @@
     font-style: italic;
 
     @include mobile {
-      color: rgb(108, 108, 108);
+      font-weight: unset;
     }
   }
 }

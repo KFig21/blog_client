@@ -63,7 +63,6 @@
     height: 34px;
     font-size: 18px;
     font-weight: unset;
-    color: rgb(105, 105, 105);
   }
 }
 
@@ -109,7 +108,12 @@
     top: 3.5px;
     display: flex;
     align-items: flex-start;
-    transition: all 0.15s ease;
+
+    @include mobile {
+      top: 9px;
+      right: 4px;
+      transform: scale(1.2);
+    }
 
     .comment-count {
       margin-left: 2.5px;
@@ -117,10 +121,6 @@
 
     .comment-icon-container {
       padding-top: 1.5px;
-    }
-
-    &:hover {
-      transform: scale(1.12);
     }
   }
 }

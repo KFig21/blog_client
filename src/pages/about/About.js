@@ -60,7 +60,7 @@ export default function About() {
         </div>
         <div className="right">
           <div className="right-content">
-            <div class="scroll-fade-top"></div>
+            {/* <div class="scroll-fade-top"></div> */}
             <h4 className="mobile-horizontal-title">About Me</h4>
             <p>
               Welcome! My name is Kevin Figenshu, I am a self-taught developer
@@ -117,7 +117,7 @@ export default function About() {
                 <span>LeetCode</span>
               </a>
             </div>
-            <div class="scroll-fade-bottom"></div>
+            {/* <div class="scroll-fade-bottom"></div> */}
           </div>
         </div>
       </div>

@@ -1,0 +1,81 @@
+@import "../../global.scss";
+
+footer {
+  background-color: $navbarColor;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0px 20px 0px;
+  height: 175px;
+
+  @include mobile {
+    height: unset;
+  }
+}
+
+.footer-container {
+  width: 90%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.footer-img-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.footer-img {
+  max-height: 40px;
+  max-width: 40px;
+  margin: 10px;
+}
+.footer-icon {
+  max-height: 40px;
+  max-width: 40px;
+  margin: 10px;
+  transform: scale(1.65);
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $primaryColor;
+    transition: all 0.15s ease;
+
+    &:hover {
+      color: $primaryColorFaded;
+    }
+  }
+}
+
+.repo-container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.repo-container a {
+  max-height: 40px;
+  max-width: 40px;
+}
+
+.project-desc {
+  color: rgb(221, 221, 221);
+  padding: 20px 0px;
+  border-top: solid 1px rgb(180, 180, 180);
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+
+.project-desc a {
+  color: $primaryColor;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.project-desc a:hover {
+  color: $primaryColorFaded;
+}

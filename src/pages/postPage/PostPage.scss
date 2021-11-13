@@ -1,0 +1,276 @@
+@import "../../global.scss";
+
+.layout {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  padding: 0px 10px 50px 10px;
+
+  @include mobile {
+    padding: 0px 15px 30px 15px;
+  }
+}
+
+.post-page-container {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 30px 0px;
+}
+
+.post-page-content {
+  width: 100%;
+  max-width: 1000px;
+  padding: 25px 35px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  text-align: left;
+
+  @include mobile {
+    padding: 25px 16px;
+  }
+
+  button {
+    background-color: $primaryColor;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 7px 15px;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    width: 100px;
+    margin: 5px auto;
+    color: white;
+
+    &:hover,
+    &:focus {
+      background-color: $primaryColorFaded;
+    }
+  }
+}
+
+.post-page-title {
+  font-size: 34px;
+  text-align: center;
+
+  @include mobile {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+}
+.post-page-submitted {
+  text-align: center;
+  font-size: 16px;
+  color: gray;
+  font-style: italic;
+  font-weight: 100;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+  border-bottom: solid 1px $borderColor;
+
+  .post-page-author {
+    color: black;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
+.post-page-body {
+  font-size: 16px;
+  width: 96%;
+  max-width: 96%;
+  min-width: 96%;
+  margin: auto;
+
+  // markdown
+
+  h1,
+  h2,
+  h3,
+  p {
+    padding: 8px 0px;
+  }
+
+  hr {
+    margin: 20px;
+    background-color: $borderColor;
+  }
+
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+    background-color: $codeBackgroundColor;
+    color: $codeColor;
+    padding: 3px 6px;
+    margin: auto 3px;
+    border-radius: 2px;
+    line-height: 30px;
+    white-space: pre-wrap;
+  }
+
+  ul,
+  li {
+    margin-left: 15px;
+  }
+
+  .solution-title-div {
+    display: block;
+    margin: 25px auto 7px auto;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .link-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  a {
+    background-color: $primaryColor;
+    color: white;
+    padding: 7px 15px;
+    border-radius: 3px;
+    font-size: 16px;
+    transition: all 0.15s ease;
+    margin: auto;
+
+    &:hover {
+      background-color: $primaryColorFaded;
+    }
+  }
+}
+
+// comments
+// comments
+
+.comments-container {
+  width: 100%;
+  max-width: 1000px;
+  padding: 25px 35px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+
+  @include mobile {
+    padding: 25px 25px;
+  }
+}
+
+.comments-header {
+  font-size: 30px;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.add-comment-container {
+  width: 95%;
+  margin: auto;
+
+  @include mobile {
+    width: 100%;
+  }
+
+  .comment-form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    label {
+      text-align: left;
+      font-size: 18px;
+      padding: 5px 0px;
+    }
+
+    input {
+      font-size: 18px;
+      line-height: 30px;
+      padding-left: 5px;
+      border: none;
+      outline: none;
+      border-bottom: solid 2px $formInputColor;
+      transition: all 0.15s ease;
+
+      &:focus {
+        background-color: $formInputFocusColor;
+        border-bottom: solid 2px $primaryColor;
+      }
+    }
+
+    textarea {
+      font-size: 18px;
+      line-height: 20px;
+      padding: 7px 12px;
+      width: 100%;
+      max-width: 100%;
+      min-width: 100%;
+      height: 85px;
+      border: none;
+      outline: none;
+      border-bottom: solid 2px $formInputColor;
+      transition: all 0.15s ease;
+
+      &:focus {
+        background-color: $formInputFocusColor;
+        border-bottom: solid 2px $primaryColor;
+      }
+    }
+  }
+  button {
+    background-color: $primaryColor;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 7px 15px;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    width: 160px;
+    margin: 15px auto;
+    color: white;
+
+    &:hover,
+    &:focus {
+      background-color: $primaryColorFaded;
+    }
+  }
+}
+
+.comment-container {
+  border-top: 1px solid $borderColor;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+
+  @include mobile {
+    padding: 15px 5px;
+  }
+
+  .comment-name {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .comment-text {
+    text-align: left;
+    font-size: 16px;
+    padding: 10px 0px;
+  }
+  .comment-date {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 100;
+    color: gray;
+    font-style: italic;
+  }
+}

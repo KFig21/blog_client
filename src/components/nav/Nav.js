@@ -12,9 +12,8 @@ export default function Nav({ userAuth, setUserAuth }) {
   return (
     <div className="navbar">
       <div className="navbar-container">
-        <div className="nav-header-container">
+        <div className="nav-header-container" title="Back to top">
           <Logo />
-          <span className="nav-title"></span>
         </div>
         <div className="nav-link-container">
           <Link to="/">

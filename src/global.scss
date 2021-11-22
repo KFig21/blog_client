@@ -9,6 +9,8 @@ $formInputFocusBorderColor: #23c5d9;
 $borderColor: rgb(202, 202, 202);
 $codeBackgroundColor: rgb(233, 233, 233);
 $codeColor: #444;
+$navbarHeight: 80px;
+$footerHeight: 175px;
 
 ::-webkit-scrollbar {
   width: 18px;
@@ -53,7 +55,7 @@ $width: 768px;
 }
 
 .loader {
-  height: 80vh;
+  height: calc(100vh - $navbarHeight - $footerHeight);
   display: flex;
   align-items: center;
   justify-content: center;

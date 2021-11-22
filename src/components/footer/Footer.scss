@@ -7,7 +7,7 @@ footer {
   align-items: center;
   justify-content: center;
   padding: 10px 0px 20px 0px;
-  height: 175px;
+  height: $footerHeight;
 
   @include mobile {
     height: unset;

@@ -8,7 +8,7 @@
   justify-content: center;
   flex-direction: column;
   margin: auto;
-  padding: 0px 10px 50px 10px;
+  padding: 0px 10px 0px 10px;
 
   @include mobile {
     padding: 0px 15px 30px 15px;
@@ -171,6 +171,7 @@
   max-width: 1000px;
   padding: 25px 35px;
   border-radius: 20px;
+  margin-bottom: 60px;
   display: flex;
   flex-direction: column;
   background-color: white;

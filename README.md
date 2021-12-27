@@ -17,6 +17,21 @@
   <li>Passport Authentication for Admins (CMS only)</li>
   <li>MERN stack CRUD application</li>
  </ul>
+ 
+<h3>Screenshots</h3>
+
+<h4>Home screen</h4>
+
+![](screenshot-1.PNG)
+
+<h4>Post screen</h4>
+
+![](screenshot-2.PNG)
+
+<h4>Comments</h4>
+
+![](screenshot-3.PNG)
+
 
 ---
 

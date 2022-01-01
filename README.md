@@ -13,8 +13,8 @@
   <ul>
   <li>MongoDB</li>
   <li>Express</li>
-  <li>NodeJS</li>
   <li>ReactJS</li>
+  <li>NodeJS</li>
   <li>SASS</li>
  </ul>
 
